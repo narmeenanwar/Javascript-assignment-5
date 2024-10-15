@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #box{
+            width: 72%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+                }
+        #boxes{
+            width: 19.6%;
+            height: 200px;
+            background-color: BLACK;
+            border: 1px solid #dadada;
+        }
+        #white{
+            width: 19.6%;
+            height: 200px;
+            background-color: white;
+            border: 2px solid #dadada;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box"></div>
+    <p id="count">0</p>
+
+    
+    <button onclick="increase()">+</button>
+    <button onclick="decrease()">-</button>
+
+    <div>
+    <span onclick="nightMode()">night </span>
+    <span onclick="lightMode()">light</span>
+</div>
+
+<br>
+<br>
+
+<div style="display: flex; justify-content: space-around;">
+    <div style="border: 1px solid #dadada; background-color: rgb(231, 236, 238);" onclick="alert('Thanks for purchasing from us')">
+        <img width="300px" src="https://priceok.pk/wp-content/uploads/2023/03/Oppo-F21-Pro-Front-k.png" alt="phone ">
+        <h3>Samsung</h3>
+    </div>
+    <div style="border: 1px solid #dadada; background-color: rgb(231, 236, 238); padding-top: 70px; " onclick="alert('Thanks for purchasing from us')">
+        <img width="280px" height="280"   src="https://fscl01.fonpit.de/devices/09/1109.png" alt="phone">
+        <h4>Smartphone</h4>
+    </div>
+    <div style="border: 1px solid #dadada; background-color: rgb(231, 236, 238);padding-top: 70px;" onclick="alert('Thanks for purchasing from us')">
+        <img width="300px" src="https://purepng.com/public/uploads/large/purepng.com-mobile-phone-with-touchmobilemobile-phonehandymobile-devicetouchscreenmobile-phone-device-231519332728kouyj.png" alt="">
+        <h3>IPhone</h3>
+    </div>
+</div>
+
+<table>
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>class</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>John</td>
+        <td>10</td>
+        <td onclick="deleteData(this)"><button>delete</button></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Doe</td>
+        <td>9</td>
+        <td onclick="deleteData(this)"><button>delete</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mark</td>
+        <td>5</td>
+        <td onclick="deleteData(this)"><button>delete</button></td>
+    </tr>
+
+</table>
+<img src="https://png.pngtree.com/png-clipart/20230820/original/pngtree-closed-wooden-door-icon-in-cartoon-style-on-a-white-background-picture-image_8085065.png" width="300px" onmouseover="changedImage(this, event)" onmouseout="changedImage(this, event)" alt="">
+
+
+<div class="content" id="content">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula dapibus metus,
+        id lacinia sem pretium at. Vestibulum consequat mi in turpis posuere, non facilisis erat sagittis.
+        <span id="moreText" style="display:none;">Nam vitae ante vel magna ullamcorper auctor in eu orci.
+        Duis imperdiet orci eu augue volutpat, nec sagittis urna fermentum. Maecenas interdum justo in felis consequat, non porta risus efficitur.</span>
+    </p>
+</div>
+
+<span class="read-more" id="readMoreBtn">Read more</span>
+
+<div>
+    <h1> DOM </h1>
+    <div id=”form-content” class=”content”>
+    <label for=”first-name”>First Name</label>
+    <input type=”text” id=”first-name” />
+    <label for=”last-name”>Last Name</label>
+    <input type=”text” id=”last-name” />
+    <label for=”email”>Email</label>
+    <input type=”text” id=”email” />
+    </div>
+    <div id=”main-content” class=”content”>
+    <p class=”render”> First Name : Alex</p>
+    <p class=”render” id=”lastName”>Last Name: Bank</p>
+    <p class=”render”> Email : alexbank@example.com</p>
+    <p class=”render”> Country : Pakistan </p>
+    <p class=”render”> contact : +92 300 1234567</p>
+    </div>
+    </div>
+
+<script src="./task4.js"></script>
+<script src="./task3.js"></script>
+<!-- <script src="./practice.js"></script> -->
+    <!-- <script src="./task2.js"></script> -->
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>
